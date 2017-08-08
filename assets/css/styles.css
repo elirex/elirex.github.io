@@ -315,7 +315,7 @@ p {
 }
 
 
-.modal {
+.popup {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -329,8 +329,8 @@ p {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
-.modal-content {
+/* popup Content */
+.popup-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -341,7 +341,7 @@ p {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
 
 /* Add Animation */
@@ -370,16 +370,29 @@ p {
     cursor: pointer;
 }
 
-.modal-header {
+.popup-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #42A8C0;
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.popup-body-image {
+  padding: 4px 4px 4px 4px;
+  overflow: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 
-.modal-footer {
+.popup-body-text {
+  padding: 2px 16px;
+}
+
+.popup-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #42A8C0;
     color: white;
 }
+
+
+

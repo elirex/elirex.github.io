@@ -1,25 +1,93 @@
  // Get the modal
-var modal = document.getElementById('myModal');
+var popupModal = document.getElementById("popup");
+
+$("#goldBall").bind("click",{type: "goldBall"}, onClicked)
+
+//$("#acrSDK").bind("click",{type: "acrSDK"}, onClicked)
+// $("#dlSDK").bind("click",{type: "dlSDK"}, onClicked)
 
 // Get the button that opens the modal
-var btn = document.getElementById("goldBall");
+// var btn = document.getElementById("goldBall");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
+//btn.onclick = function() {
+function onClicked(event) {
+    var popupBody = document.getElementById("popup-body");
+    removeChild(popupBody);
+
+    var title = "";
+    if (event.data.type == "goldBall") {
+        title = "Gold Ball 50th"
+        var images = ["assets/images/goldBall/0.webp", "assets/images/goldBall/1.webp", "assets/images/goldBall/2.webp",
+                "assets/images/goldBall/3.webp", "assets/images/goldBall/4.webp"];
+        popupBody.className = "popup-body-image";
+        insertImage(popupBody, images);
+    } 
+
+    // else if (event.data.type == "acrSDK") {
+    //     title = "Automatic Content Recognition Android SDK";
+    //     popupBody.className = "popup-body-text";
+    //     var textContents = ["● Android裝置上的聲音自動內容辨識 Librar", 
+    //                         "● 我主要負責開發與實作SDK整體功能", 
+    //                         "● 使用廠商：中華電信MOD、一直ON TV(中視) App、2015GMA(金曲獎) App、索驥創意"];
+    //     insertText(popupBody, textContents);
+    // } else if (event.data.type == "dlSDK") {
+    //     title = "Deep Learning Android SDK";
+    //     popupBody.className = "popup-body-text";
+    //     var textContents = ["● 搭載MTK X20晶片的Android裝置可執行Deep Learning運算",
+    //                         "● 主要負責開發與實做整體SDK，JNI串接MTK Deep Neural Networks native library"];
+    //     insertText(popupBody, textContents);
+    // }
+
+ 
+
+
+
+    var popupTitle = document.getElementById("popup-title");
+    removeChild(popupTitle);
+    popupTitle.appendChild(document.createTextNode(title));
+
+    popupModal.style.display = "block";
+}
+
+function insertText(popupBody, textContents) {
+    for (var i = 0; i < textContents.length; i++) {
+        var desc = document.createElement("h4");
+        var text = document.createTextNode(textContents[i]);
+        desc.appendChild(text);
+        popupBody.appendChild(desc);
+    }
+}
+
+function insertImage(popupBody, images) {
+    for (var i = 0; i < images.length; i++) {
+        var img = document.createElement("img");
+        img.width = "288";
+        img.height = "432";
+        img.src = images[i];
+        img.style.cssText = "width: 100% height: 100%; margin: 0px 8px 0px 8px;";
+
+        popupBody.appendChild(img);
+    }
+}
+
+function removeChild(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+    popupModal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == popupModel) {
+        popupModal.style.display = "none";
     }
 }
