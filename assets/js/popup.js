@@ -50,9 +50,12 @@ function onClicked(event) {
         phoneContent.appendChild(document.createTextNode("886-911-428-758"));
         phone.appendChild(phoneContent);
 
+        var location = document.createElement("h4");
+        location.appendChild(document.createTextNode("Location: Taipei, Taiwan"));
+
         popupBody.appendChild(email);
         popupBody.appendChild(phone);
-
+        popupBody.appendChild(location);
     }
 
     // else if (event.data.type == "acrSDK") {
