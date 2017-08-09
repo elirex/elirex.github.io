@@ -1,5 +1,5 @@
  // Get the modal
-var popupModal = document.getElementById("popup");
+var popup = document.getElementById("popup");
 
 $("#goldBall").bind("click",{type: "goldBall"}, onClicked)
 $("#rooit").bind("click",{type: "rooit"}, onClicked)
@@ -22,8 +22,12 @@ function onClicked(event) {
     var title = "";
     if (event.data.type == "goldBall") {
         title = "金鐘50th Android App";
-        var images = ["assets/images/goldBall/0.webp", "assets/images/goldBall/1.webp", "assets/images/goldBall/2.png",
-                "assets/images/goldBall/3.webp", "assets/images/goldBall/4.webp", "assets/images/goldBall/5.webp"];
+        var images = ["assets/images/goldBall/0.jpg", 
+                      "assets/images/goldBall/1.jpg", 
+                      "assets/images/goldBall/2.jpg",
+                      "assets/images/goldBall/3.jpg", 
+                      "assets/images/goldBall/4.jpg", 
+                      "assets/images/goldBall/5.jpg"];
         popupBody.className = "popup-body-image";
         insertImage(popupBody, images);
     } else if (event.data.type == "rooit") {
@@ -77,7 +81,7 @@ function onClicked(event) {
     removeChild(popupTitle);
     popupTitle.appendChild(document.createTextNode(title));
 
-    popupModal.style.display = "block";
+    popup.style.display = "block";
 }
 
 function insertText(popupBody, textContents) {
@@ -109,12 +113,12 @@ function removeChild(parent) {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    popupModal.style.display = "none";
+    popup.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == popupModel) {
-        popupModal.style.display = "none";
+    if (event.target == popup) {
+        popup.style.display = "none";
     }
 }
