@@ -2,12 +2,13 @@
 var popupModal = document.getElementById("popup");
 
 $("#goldBall").bind("click",{type: "goldBall"}, onClicked)
+$("#rooit").bind("click",{type: "rooit"}, onClicked)
+$("#contect-me").bind("click", {type: "contect-me"}, onClicked)
+
 
 //$("#acrSDK").bind("click",{type: "acrSDK"}, onClicked)
 // $("#dlSDK").bind("click",{type: "dlSDK"}, onClicked)
 
-// Get the button that opens the modal
-// var btn = document.getElementById("goldBall");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -20,12 +21,39 @@ function onClicked(event) {
 
     var title = "";
     if (event.data.type == "goldBall") {
-        title = "Gold Ball 50th"
-        var images = ["assets/images/goldBall/0.webp", "assets/images/goldBall/1.webp", "assets/images/goldBall/2.webp",
-                "assets/images/goldBall/3.webp", "assets/images/goldBall/4.webp"];
+        title = "金鐘50th Android App";
+        var images = ["assets/images/goldBall/0.webp", "assets/images/goldBall/1.webp", "assets/images/goldBall/2.png",
+                "assets/images/goldBall/3.webp", "assets/images/goldBall/4.webp", "assets/images/goldBall/5.webp"];
         popupBody.className = "popup-body-image";
         insertImage(popupBody, images);
-    } 
+    } else if (event.data.type == "rooit") {
+        title = "Rooit Android App";
+        var images = ["assets/images/rooit/0.jpg", "assets/images/rooit/1.jpg", "assets/images/rooit/2.jpg" ,
+                    "assets/images/rooit/3.jpg"];
+        popupBody.className = "popup-body-image";
+        insertImage(popupBody, images);
+
+    } else if (event.data.type == "contect-me") {
+        title = "Contect Me";
+        popupBody.className = "popup-body-text";
+        var email = document.createElement("h4");
+        email.appendChild(document.createTextNode("Email: "));
+        var emailContent = document.createElement("a");
+        emailContent.href = "mailto: sheng79225@gmail.com";
+        emailContent.appendChild(document.createTextNode("sheng79225@gmail.com")); 
+        email.appendChild(emailContent);
+
+        var phone = document.createElement("h4");
+        phone.appendChild(document.createTextNode("Phone: "));
+        var phoneContent = document.createElement("a");
+        phoneContent.href = "tel: 886-911-428-758";
+        phoneContent.appendChild(document.createTextNode("886-911-428-758"));
+        phone.appendChild(phoneContent);
+
+        popupBody.appendChild(email);
+        popupBody.appendChild(phone);
+
+    }
 
     // else if (event.data.type == "acrSDK") {
     //     title = "Automatic Content Recognition Android SDK";
@@ -41,10 +69,6 @@ function onClicked(event) {
     //                         "● 主要負責開發與實做整體SDK，JNI串接MTK Deep Neural Networks native library"];
     //     insertText(popupBody, textContents);
     // }
-
- 
-
-
 
     var popupTitle = document.getElementById("popup-title");
     removeChild(popupTitle);
@@ -65,8 +89,8 @@ function insertText(popupBody, textContents) {
 function insertImage(popupBody, images) {
     for (var i = 0; i < images.length; i++) {
         var img = document.createElement("img");
-        img.width = "288";
-        img.height = "432";
+        img.width = "252";
+        img.height = "448";
         img.src = images[i];
         img.style.cssText = "width: 100% height: 100%; margin: 0px 8px 0px 8px;";
 
