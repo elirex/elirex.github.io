@@ -22,12 +22,12 @@ function onClicked(event) {
     var title = "";
     if (event.data.type == "goldBall") {
         title = "金鐘50th Android App";
-        var images = ["assets/images/goldBall/0.jpg", 
-                      "assets/images/goldBall/1.jpg", 
-                      "assets/images/goldBall/2.jpg",
-                      "assets/images/goldBall/3.jpg", 
-                      "assets/images/goldBall/4.jpg", 
-                      "assets/images/goldBall/5.jpg"];
+        var images = ["assets/images/goldball/0.jpg", 
+                      "assets/images/goldball/1.jpg", 
+                      "assets/images/goldball/2.jpg",
+                      "assets/images/goldball/3.jpg", 
+                      "assets/images/goldball/4.jpg", 
+                      "assets/images/goldball/5.jpg"];
         popupBody.className = "popup-body-image";
         insertImage(popupBody, images);
     } else if (event.data.type == "rooit") {
