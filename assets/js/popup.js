@@ -94,6 +94,12 @@ function onClickedLanguage(event) {
         removeChild(iii_rooit_main);
         insertText(iii_rooit_main, ["Developed the original prototype of the app."], "");
 
+
+        var goldball = document.getElementById("goldBall");
+        removeChild(goldBall);
+        insertText(goldball, ["Golden Bell Award 50th (金鐘獎50th)"], "");
+       
+
         var iii_goldball_desc= document.getElementById("III-GoldBall-desc");
         removeChild(iii_goldball_desc);
         insertText(iii_goldball_desc, ["Multi-view live and chatting, and interactive game, etc. (5000-10000 installs, rated 4.0/5.0, total rating 188)"], "");
@@ -120,7 +126,6 @@ function onClickedLanguage(event) {
 
 
         var android_architecture = document.getElementById("Android-Architecture");
-        console.log(android_architecture);
         removeChild(android_architecture);
         insertText(android_architecture, ["Android architecture blueprint, using Data Binding and RxJava to implement MVP/MVVM architecture similarly."], "");
 
