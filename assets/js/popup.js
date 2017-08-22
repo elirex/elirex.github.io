@@ -21,7 +21,7 @@ function onClickedLanguage(event) {
 
         var summary = document.getElementById("summary");
         removeChild(summary);
-        insertText(summary, ["I am an engineer and have a lot of enthusiasm for coding. I mainly engaged on Android and Deep Learning develop. In the free time, I also love to develop side project and contribute to open-source."], "p");
+        insertText(summary, ["I am an engineer and have a lot of enthusiasm for coding. I mainly focused on Android and Deep Learning develop. In the free time, I also love to develop side project and contribute to open-source."], "p");
 
         var iii_company = document.getElementById("III-company");
         removeChild(iii_company);
@@ -34,11 +34,11 @@ function onClickedLanguage(event) {
 
         var iii_scs_desc = document.getElementById("III-smart-camera-system-desc");
         removeChild(iii_scs_desc);
-        insertText(iii_scs_desc, ["Using Deep Learning to implement the cross camera pedestrian attribute analysis and tracking."], "");
+        insertText(iii_scs_desc, ["Using Deep Learning to implement the across camera pedestrian attribute analysis and tracking."], "");
 
         var iii_scs_main = document.getElementById("III-smart-camera-system-main");
         removeChild(iii_scs_main);
-        insertText(iii_scs_main, ["Implemented the cross camera pedestrian re-identification, the pedestrian feature analysis and integrated all the system modules."], "");
+        insertText(iii_scs_main, ["Developed the across camera pedestrian re-identification, the pedestrian feature analysis and integrated all the system modules."], "");
 
 
         var iii_dls_desc = document.getElementById("III-deep-learning-android-sdk-desc");
@@ -47,7 +47,7 @@ function onClickedLanguage(event) {
 
         var iii_dls_main = document.getElementById("III-deep-learning-android-sdk-main");
         removeChild(iii_dls_main);
-        insertText(iii_dls_main, ["Implemented the overall SDK (Through Java Native Interface to connection MTK Deep Neural Networks native library, and build model manager, etc.)."], "");
+        insertText(iii_dls_main, ["Developed the overall SDK (Through Java Native Interface to connection MTK Deep Neural Networks native library, and build model manager, etc.)."], "");
 
         var iii_acr_sdk_desc = document.getElementById("III-ACR-SDK-desc");
         removeChild(iii_acr_sdk_desc);
@@ -67,7 +67,7 @@ function onClickedLanguage(event) {
 
         var iii_acr_server_main = document.getElementById("III-ACR-Server-main");
         removeChild(iii_acr_server_main);
-        insertText(iii_acr_server_main, ["Implemented video streaming source receiving, and the audio and audio fingerprint recorded modules."], "");
+        insertText(iii_acr_server_main, ["Developed video streaming source receiving, and the audio and audio fingerprint recorded modules."], "");
 
 
         var iii_ftv_title = document.getElementById("III-FTV-title");
@@ -80,11 +80,11 @@ function onClickedLanguage(event) {
 
         var iii_ftv_desc = document.getElementById("III-FTV-desc");
         removeChild(iii_ftv_desc);
-        insertText(iii_ftv_desc, ["Live with the audience instantly interact, and set a record 20000 users at the same time. (100000 - 500000 installs, rated 4.3/5.0, total rating 2795)"], "");
+        insertText(iii_ftv_desc, ["Live stream with the audience instantly interact, and 20000 users online at the same time. (100000 - 500000 installs, rated 4.3/5.0, total rating 2795)"], "");
 
         var iii_ftv_main = document.getElementById("III-FTV-main");
         removeChild(iii_ftv_main);
-        insertText(iii_ftv_main, ["Mainly responsible for the App architecture adjustment, and using Kotlin refactoring."], "");
+        insertText(iii_ftv_main, ["Mainly responsible for the app architecture adjustment, and using Kotlin refactoring."], "");
 
         var iii_rooit_desc = document.getElementById("III-Rooit-desc");
         removeChild(iii_rooit_desc);
@@ -106,13 +106,13 @@ function onClickedLanguage(event) {
 
         var iii_goldball_main = document.getElementById("III-GoldBall-main");
         removeChild(iii_goldball_main);
-        insertText(iii_goldball_main, ["Developed the entire App."], "");
+        insertText(iii_goldball_main, ["Developed the entire app."], "");
 
         var iii_ttv_title = document.getElementById("III-TTV-title");
         removeChild(iii_ttv_title);
         ttv_link = document.createElement("a");
         ttv_link.href = "https://play.google.com/store/apps/details?id=com.totvnow.ttv";
-        insertText(ttv_link, ["Taiwan Television News (台視新聞) Android App"], "");
+        insertText(ttv_link, ["Taiwan Television News (台視新聞) Android app"], "");
         iii_ttv_title.appendChild(ttv_link);
         iii_ttv_title.appendChild(document.createTextNode(" (2014.12 - 2014.12)"));
 
