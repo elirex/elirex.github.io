@@ -21,7 +21,7 @@ function onClickedLanguage(event) {
 
         var summary = document.getElementById("summary");
         removeChild(summary);
-        insertText(summary, ["I am an engineer and have a lot of enthusiasm for coding. I mainly focused on Android and Deep Learning develop. In the free time, I also love to develop side project and contribute to open-source."], "p");
+        insertText(summary, ["I am a software engineer and have a lot of enthusiasm for programming. I mainly focus on Android and Deep Learning develop. In the free time, I also love to develop side project and contribute to open-source."], "p");
 
         var iii_company = document.getElementById("III-company");
         removeChild(iii_company);
@@ -29,7 +29,7 @@ function onClickedLanguage(event) {
 
         var iii_details = document.getElementById("III-details");
         removeChild(iii_details);
-        insertText(iii_details, ["Focused engaged on Android and Deep Learning develop."], "p");
+        insertText(iii_details, ["Focuse on Android and Deep Learning develop."], "p");
 
 
         var iii_scs_desc = document.getElementById("III-smart-camera-system-desc");
@@ -43,7 +43,7 @@ function onClickedLanguage(event) {
 
         var iii_dls_desc = document.getElementById("III-deep-learning-android-sdk-desc");
         removeChild(iii_dls_desc);
-        insertText(iii_dls_desc, ["An Android device with an MTK X20 chip can perform a Deep Learning computation."], "");
+        insertText(iii_dls_desc, ["An Android device with an MTK X20 chip can perform a deep learning computation."], "");
 
         var iii_dls_main = document.getElementById("III-deep-learning-android-sdk-main");
         removeChild(iii_dls_main);
@@ -59,7 +59,7 @@ function onClickedLanguage(event) {
 
         var iii_acr_sdk_other = document.getElementById("III-ACR-SDK-other");
         removeChild(iii_acr_sdk_other);
-        insertText(iii_acr_sdk_other, ["Being used by Chunghwa Telecom MOD App, China Television App, Golden Melody Award 2015 App, and Sixnology."], "");
+        insertText(iii_acr_sdk_other, ["SDK is used to Chunghwa Telecom MOD App, China Television App, Golden Melody Award 2015 App, and Sixnology."], "");
 
         var iii_acr_server_desc = document.getElementById("III-ACR-Server-desc");
         removeChild(iii_acr_server_desc);
@@ -67,7 +67,7 @@ function onClickedLanguage(event) {
 
         var iii_acr_server_main = document.getElementById("III-ACR-Server-main");
         removeChild(iii_acr_server_main);
-        insertText(iii_acr_server_main, ["Developed video streaming source receiving, and the audio and audio fingerprint recorded modules."], "");
+        insertText(iii_acr_server_main, ["Developed the video streaming receiver module, and the audio and audio fingerprint recorded module."], "");
 
 
         var iii_ftv_title = document.getElementById("III-FTV-title");
@@ -84,15 +84,15 @@ function onClickedLanguage(event) {
 
         var iii_ftv_main = document.getElementById("III-FTV-main");
         removeChild(iii_ftv_main);
-        insertText(iii_ftv_main, ["Mainly responsible for the app architecture adjustment, and using Kotlin refactoring."], "");
+        insertText(iii_ftv_main, ["Mainly responsible for the app architecture adjustment, and using Kotlin to refactor."], "");
 
         var iii_rooit_desc = document.getElementById("III-Rooit-desc");
         removeChild(iii_rooit_desc);
-        insertText(iii_rooit_desc, ["New type chat app, voice interaction, the new kind of sticker and chatbot and so on."], "");
+        insertText(iii_rooit_desc, ["A new type chats app that including the voice interaction, the new kind of sticker and chatbot and so on."], "");
 
         var iii_rooit_main = document.getElementById("III-Rooit-main");
         removeChild(iii_rooit_main);
-        insertText(iii_rooit_main, ["Developed the original prototype of the app."], "");
+        insertText(iii_rooit_main, ["Developed the prototype of Rooit app."], "");
 
 
         var goldball = document.getElementById("goldBall");
@@ -102,7 +102,7 @@ function onClickedLanguage(event) {
 
         var iii_goldball_desc= document.getElementById("III-GoldBall-desc");
         removeChild(iii_goldball_desc);
-        insertText(iii_goldball_desc, ["Multi-view live and chatting, and interactive game, etc. (5000-10000 installs, rated 4.0/5.0, total rating 188)"], "");
+        insertText(iii_goldball_desc, ["Multi-view live stream chatting, and the interactive game. (5000-10000 installs, rated 4.0/5.0, total rating 188)"], "");
 
         var iii_goldball_main = document.getElementById("III-GoldBall-main");
         removeChild(iii_goldball_main);
