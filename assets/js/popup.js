@@ -122,7 +122,7 @@ function onClickedLanguage(event) {
 
         var iii_ttv_main = document.getElementById("III-TTV-main");
         removeChild(iii_ttv_main);
-        insertText(iii_ttv_main, ["Developed the entire App."], "");
+        insertText(iii_ttv_main, ["Developed the entire app."], "");
 
 
         var android_architecture = document.getElementById("Android-Architecture");
