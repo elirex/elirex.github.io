@@ -21,7 +21,7 @@ function onClickedLanguage(event) {
 
         var summary = document.getElementById("summary");
         removeChild(summary);
-        insertText(summary, ["I am a software engineer and have a lot of enthusiasm for programming. I mainly focus on Android and Deep Learning develop. In the free time, I also love to develop side project and contribute to open-source."], "p");
+        insertText(summary, ["I am a software engineer and have a lot of enthusiasm for programming. I mainly focus on Android and Deep Learning develop. In the free time, I also love to develop the side project and contribute to the open-source."], "p");
 
         var iii_company = document.getElementById("III-company");
         removeChild(iii_company);
@@ -34,11 +34,11 @@ function onClickedLanguage(event) {
 
         var iii_scs_desc = document.getElementById("III-smart-camera-system-desc");
         removeChild(iii_scs_desc);
-        insertText(iii_scs_desc, ["Using Deep Learning to implement the across camera pedestrian attribute analysis and tracking."], "");
+        insertText(iii_scs_desc, ["Using Deep Learning to implement the across-camera pedestrian attribute analysis and tracking."], "");
 
         var iii_scs_main = document.getElementById("III-smart-camera-system-main");
         removeChild(iii_scs_main);
-        insertText(iii_scs_main, ["Developed the across camera pedestrian re-identification, the pedestrian feature analysis and integrated all the system modules."], "");
+        insertText(iii_scs_main, ["Developed the pedestrian re-identification and the pedestrian attribute analysis on the across-camera environment, and integrated all the system modules."], "");
 
 
         var iii_dls_desc = document.getElementById("III-deep-learning-android-sdk-desc");
@@ -51,15 +51,15 @@ function onClickedLanguage(event) {
 
         var iii_acr_sdk_desc = document.getElementById("III-ACR-SDK-desc");
         removeChild(iii_acr_sdk_desc);
-        insertText(iii_acr_sdk_desc, ["Audio Automatic Content Recognition on Android Devices."], "");
+        insertText(iii_acr_sdk_desc, ["Audio Automatic Content Recognition on Android devices."], "");
 
         var iii_acr_sdk_main = document.getElementById("III-ACR-SDK-main");
         removeChild(iii_acr_sdk_main);
-        insertText(iii_acr_sdk_main, ["Developed the overall functionality of the SDK (Local ACR, Remote ACR, and Recording module, etc.)."], "");
+        insertText(iii_acr_sdk_main, ["Developed the overall functionality of the SDK (local ACR, remote ACR, and recording module, etc.)."], "");
 
         var iii_acr_sdk_other = document.getElementById("III-ACR-SDK-other");
         removeChild(iii_acr_sdk_other);
-        insertText(iii_acr_sdk_other, ["SDK is used to Chunghwa Telecom MOD App, China Television App, Golden Melody Award 2015 App, and Sixnology."], "");
+        insertText(iii_acr_sdk_other, ["SDK is used to Chunghwa Telecom MOD app, China Television app, Golden Melody Award 2015 app, and Sixnology."], "");
 
         var iii_acr_server_desc = document.getElementById("III-ACR-Server-desc");
         removeChild(iii_acr_server_desc);
@@ -80,7 +80,7 @@ function onClickedLanguage(event) {
 
         var iii_ftv_desc = document.getElementById("III-FTV-desc");
         removeChild(iii_ftv_desc);
-        insertText(iii_ftv_desc, ["Live stream with the audience instantly interact, and 20000 users online at the same time. (100000 - 500000 installs, rated 4.3/5.0, total rating 2795)"], "");
+        insertText(iii_ftv_desc, ["Live stream with the audience interaction, and has a record of 20000 users online at the same time. (100000 - 500000 installs, rated 4.3/5.0, total rating 2795)"], "");
 
         var iii_ftv_main = document.getElementById("III-FTV-main");
         removeChild(iii_ftv_main);
@@ -136,7 +136,7 @@ function onClickedLanguage(event) {
 
         var mini_floating_player = document.getElementById("Mini-Floating-Player");
         removeChild(mini_floating_player);
-        insertText(mini_floating_player, ["A Chrome App, let you watch YouTube in a floating window."], "");
+        insertText(mini_floating_player, ["A Chrome app, let you watch YouTube in a floating window."], "");
 
     } else if (event.target.text == "中文") {
         location.reload();
