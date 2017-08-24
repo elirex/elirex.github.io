@@ -118,7 +118,7 @@ function onClickedLanguage(event) {
 
         var iii_ttv_desc = document.getElementById("III-TTV-desc");
         removeChild(iii_ttv_desc);
-        insertText(iii_ttv_desc, ["News browsing App. (5000-10000 installs, rated 4.2/5.0, total rating 242)"], "");
+        insertText(iii_ttv_desc, ["News browsing app. (5000-10000 installs, rated 4.2/5.0, total rating 242)"], "");
 
         var iii_ttv_main = document.getElementById("III-TTV-main");
         removeChild(iii_ttv_main);
@@ -136,7 +136,7 @@ function onClickedLanguage(event) {
 
         var mini_floating_player = document.getElementById("Mini-Floating-Player");
         removeChild(mini_floating_player);
-        insertText(mini_floating_player, ["A Chrome app, let you watch YouTube in a floating window."], "");
+        insertText(mini_floating_player, ["A Chrome app, let you watching YouTube in a floating window."], "");
 
     } else if (event.target.text == "中文") {
         location.reload();
