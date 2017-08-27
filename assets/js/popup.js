@@ -43,7 +43,7 @@ function onClickedLanguage(event) {
 
         var iii_dls_desc = document.getElementById("III-deep-learning-android-sdk-desc");
         removeChild(iii_dls_desc);
-        insertText(iii_dls_desc, ["Android device with MediaTek chip can speed up perform the deep learning computation."], "");
+        insertText(iii_dls_desc, ["The Android device with MediaTek chip that can speed up the deep learning computation."], "");
 
         var iii_dls_main = document.getElementById("III-deep-learning-android-sdk-main");
         removeChild(iii_dls_main);
