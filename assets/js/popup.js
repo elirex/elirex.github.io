@@ -21,7 +21,7 @@ function onClickedLanguage(event) {
 
         var summary = document.getElementById("summary");
         removeChild(summary);
-        insertText(summary, ["I am a software engineer and have a lot of enthusiasm for programming. I mainly focus on Android and Deep Learning develop. In the free time, I also love to develop the side project and contribute to the open-source."], "p");
+        insertText(summary, ["I am a software engineer and have a lot of enthusiasm for programming. I am focusing on Android and Deep Learning development. In the free time, I also love to develop the side project and contribute to the open-source."], "p");
 
         var iii_company = document.getElementById("III-company");
         removeChild(iii_company);
@@ -43,11 +43,11 @@ function onClickedLanguage(event) {
 
         var iii_dls_desc = document.getElementById("III-deep-learning-android-sdk-desc");
         removeChild(iii_dls_desc);
-        insertText(iii_dls_desc, ["An Android device with an MTK X20 chip can perform a deep learning computation."], "");
+        insertText(iii_dls_desc, ["Android device with MediaTek chip can speed up perform the deep learning computation."], "");
 
         var iii_dls_main = document.getElementById("III-deep-learning-android-sdk-main");
         removeChild(iii_dls_main);
-        insertText(iii_dls_main, ["Developed the overall SDK (Through Java Native Interface to connection MTK Deep Neural Networks native library, and build model manager, etc.)."], "");
+        insertText(iii_dls_main, ["Developed the overall SDK (Through Java Native Interface to connection MediaTek Deep Neural Networks native library, and build model manager, etc.)."], "");
 
         var iii_acr_sdk_desc = document.getElementById("III-ACR-SDK-desc");
         removeChild(iii_acr_sdk_desc);
