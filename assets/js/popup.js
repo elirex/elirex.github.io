@@ -43,11 +43,11 @@ function onClickedLanguage(event) {
 
         var iii_dls_desc = document.getElementById("III-deep-learning-android-sdk-desc");
         removeChild(iii_dls_desc);
-        insertText(iii_dls_desc, ["The Android device with MediaTek chip that can speed up the deep learning computation."], "");
+        insertText(iii_dls_desc, ["The Android device runs the deep learning models of Caffe, Caffe2 and TensorFlow."], "");
 
         var iii_dls_main = document.getElementById("III-deep-learning-android-sdk-main");
         removeChild(iii_dls_main);
-        insertText(iii_dls_main, ["Developed the overall SDK (Through Java Native Interface to connection MediaTek Deep Neural Networks native library, and build model manager, etc.)."], "");
+        insertText(iii_dls_main, ["Developed the overall SDK (Through Java Native Interface to connect the deep learning frameworks and OpenCV)."], "");
 
         var iii_acr_sdk_desc = document.getElementById("III-ACR-SDK-desc");
         removeChild(iii_acr_sdk_desc);
